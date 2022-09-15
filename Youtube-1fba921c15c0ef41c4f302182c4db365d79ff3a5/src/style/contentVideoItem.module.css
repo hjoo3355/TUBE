@@ -1,0 +1,48 @@
+.video {
+    padding: 0.2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 250ms ease-in;
+}
+
+.video.grid {
+    width: 100%;
+}
+
+.video.list {
+    width: 30%;
+}
+
+@media screen and (max-width: 750px) {
+    .video.grid {
+        width: 50%;
+    }
+
+    .video.list {
+        width: 50%;
+    }
+}
+
+.video:hover {
+    transform: scale(1.02);
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+    max-height: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.channel {
+    font-size: 1rem;
+    font-weight: 400;
+    max-height: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
